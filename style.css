@@ -100,12 +100,13 @@ li{
     width: 32px;
 }
 
-.mail{
+.link{
     text-decoration: none;
-    color: #FCC0CC;
+    color: #FFFFFF;
+    transition-duration: 400ms;
 }
 
-.mail:hover{
+.link:hover{
     text-decoration: none;
     color: #FAA3B4;
 }
