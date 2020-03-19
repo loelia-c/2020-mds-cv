@@ -48,6 +48,8 @@ li{
     text-align: center;
     grid-area: coordonnees;
     padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1;
 }
 
 
