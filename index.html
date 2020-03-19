@@ -8,9 +8,9 @@
 </head>
 <body>
 <div class="container">
-    <div class="cadre-coordonnees" itemscope itemtype="http://schema.org/Person">
-        <h1 class="titre-nom" itemprop="name">Loélia COUTEAU (23 ans)</h1>
-        <p class="infos" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
+    <div id="cadre-coordonnees" itemscope itemtype="http://schema.org/Person">
+        <div id="titre-nom" itemprop="name">Loélia Couteau (23 ans)</div>
+        <p id="infos" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
         <div>
             <a href="images/photo.jpg" target="_blank" class="photo">
                 <img src="images/photo.jpg" class="image" alt="Photo Loélia COUTEAU">
@@ -20,7 +20,12 @@
         <div itemscope itemtype="http://schema.org/PostalAddress">
             <ul class="listes">
                 <li class="coordonnees">
-                <strong>Mail : </strong> <a href="mailto:loelia.couteau@gmail.com" itemprop="email" class="mail">loelia.couteau@gmail.com</a>
+                    <img class="logo" src="logos/mail.png"/>
+                    <a href="mailto:loelia.couteau@gmail.com" itemprop="email" class="mail">loelia.couteau@gmail.com</a>
+                </li>
+                <li class="coordonnees">
+                    <img class="logo" src="logos/linkedin.png"/>
+                    <a href="https://www.linkedin.com/in/loelia-couteau">loelia-c</a>
                 </li>
             </ul>
         </div>
@@ -28,12 +33,12 @@
 
     <div class="cadre_experiences">
         <h1 class="titre">Webdesigner / Développeuse</h1>
-        <div class="titres-listes">Expériences professionnelles</div>
+        <h2 class="titres-listes">Expériences professionnelles</h2>
         <ul class="listes">
             <li class="content-listes">
                 <strong>2019 - 2020 :</strong> Apprentissage en Webdesign
                 <div>
-                    OPIXIDO, <i>Nantes</i>
+                    Opixido, <i>Nantes</i>
                 </div>
             </li>
             <li class="content-listes">
@@ -56,7 +61,7 @@
             </li>
         </ul>
 
-        <div class="titres-listes">Formations</div>
+        <h2 class="titres-listes">Formations</h2>
         <ul class="listes">
             <li class="content-listes">
                 <strong>2019 - 2020 : </strong> 3ème année Bachelor Webdesign
@@ -72,7 +77,7 @@
             </li>
         </ul>
 
-        <div class="titres-listes">Centres d'intérêts</div>
+        <h2 class="titres-listes">Centres d'intérêts</h2>
         <ul class="listes">
             <li class="content-listes">
                 <strong>Musique : </strong> Passionnée de musique en tous genres, de chant, pratique du clavier synthétiseur
