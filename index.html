@@ -9,11 +9,14 @@
 <body>
 <div class="container">
     <div id="cadre-coordonnees" itemscope itemtype="http://schema.org/Person">
-        <div id="titre-nom" itemprop="name">Loélia Couteau (23 ans)</div>
         <img src="images/photo.jpg" class="image" alt="Photo Loélia COUTEAU">
-        <p id="infos" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
+        <div id="infos">
+            <div id="titre-nom" itemprop="name">Loélia Couteau</div>
+            <h1 class="titre">Web Designer & Développeuse web</h1>
+            <p id="description" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
+        </div>
 
-        <div itemscope itemtype="http://schema.org/PostalAddress">
+        <div id="contact" itemscope itemtype="http://schema.org/PostalAddress">
             <ul id="liste-coordonnees">
                 <li class="coordonnees">
                     <img class="logo" src="logos/mail.png"/>
@@ -26,65 +29,69 @@
             </ul>
         </div>
     </div>
+    <div id="contenu-cv">
+        <div id="cadre-experiences" class="cadre-contenu">
+            <h2 class="titres-listes">Expériences professionnelles</h2>
+            <ul class="listes">
+                <li class="content-listes">
+                    <strong>2019 - 2020 :</strong> Apprentissage en Webdesign
+                    <div>
+                        Opixido, <i>Nantes</i>
+                    </div>
+                </li>
+                <li class="content-listes">
+                    <strong>2018 - 2017 :</strong> Apprentissage en Développement web
+                    <div>
+                        Institut Mines Télécom, <i>Nantes</i>
+                    </div>
+                </li>
+                <li class="content-listes">
+                    <strong>2018 (2 mois) :</strong> Stage en Développement web
+                    <div>
+                        Institut Mines Télécom, <i>Nantes</i>
+                    </div>
+                </li>
+                <li class="content-listes">
+                    <strong>2017 (2 mois) :</strong> Vendeuse en boulangerie
+                    <div>
+                        La Mie De Pain, <i>La Roche-Sur-Yon</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <div class="cadre_experiences">
-        <h1 class="titre">Webdesigner / Développeuse</h1>
-        <h2 class="titres-listes">Expériences professionnelles</h2>
-        <ul class="listes">
-            <li class="content-listes">
-                <strong>2019 - 2020 :</strong> Apprentissage en Webdesign
-                <div>
-                    Opixido, <i>Nantes</i>
-                </div>
-            </li>
-            <li class="content-listes">
-                <strong>2018 - 2017 :</strong> Apprentissage en Développement web
-                <div>
-                    Institut Mines Télécom, <i>Nantes</i>
-                </div>
-            </li>
-            <li class="content-listes">
-                <strong>2018 (2 mois) :</strong> Stage en Développement web
-                <div>
-                    Institut Mines Télécom, <i>Nantes</i>
-                </div>
-            </li>
-            <li class="content-listes">
-                <strong>2017 (2 mois) :</strong> Vendeuse en boulangerie
-                <div>
-                    La Mie De Pain, <i>La Roche-Sur-Yon</i>
-                </div>
-            </li>
-        </ul>
 
-        <h2 class="titres-listes">Formations</h2>
-        <ul class="listes">
-            <li class="content-listes">
-                <strong>2019 - 2020 : </strong> 3ème année Bachelor Webdesign
-                <div>
-                    My Digital School, <i>Nantes</i>
-                </div>
-            </li>
-            <li class="content-listes">
-                <strong>2017 - 2019 : </strong> BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers
-                <div>
-                    Lycée Carcouët, <i>Nantes</i>
-                </div>
-            </li>
-        </ul>
+        <div id="cadre-formations" class="cadre-contenu">
+            <h2 class="titres-listes">Formations</h2>
+            <ul class="listes">
+                <li class="content-listes">
+                    <strong>2019 - 2020 : </strong> 3ème année Bachelor Webdesign
+                    <div>
+                        My Digital School, <i>Nantes</i>
+                    </div>
+                </li>
+                <li class="content-listes">
+                    <strong>2017 - 2019 : </strong> BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers
+                    <div>
+                        Lycée Carcouët, <i>Nantes</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-        <h2 class="titres-listes">Centres d'intérêts</h2>
-        <ul class="listes">
-            <li class="content-listes">
-                <strong>Musique : </strong> Passionnée de musique en tous genres, de chant, pratique du clavier synthétiseur
-            </li>
-            <li class="content-listes">
-                <strong>Sorties : </strong> Concerts, spectacles, sorties culturelles...
-            </li>
-        </ul>
+        <div id="cadre-centres-interets" class="cadre-contenu">
+            <h2 class="titres-listes">Centres d'intérêts</h2>
+            <ul class="listes">
+                <li class="content-listes">
+                    <strong>Musique : </strong> Passionnée de musique en tous genres, de chant, pratique du clavier synthétiseur
+                </li>
+                <li class="content-listes">
+                    <strong>Sorties : </strong> Concerts, spectacles, sorties culturelles...
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-
 </body>
 </html>
 

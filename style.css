@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Questrial|Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Great+Vibes&display=swap');
 
 body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2;
-    font-family: "Questrial", serif;
+    background-color: #FDF7F8;
+    font-family: "Raleway", serif;
     font-size : 1rem;
 }
 
 h1{
-    font-size: 2.25rem;
-    font-family: 'Rochester',serif ;
+    font-size: 2rem;
+    font-family: 'Raleway',sans-serif ;
     margin: 0;
 }
 
 h2{
-    font-size : 1.875rem;
-    font-family: 'Rochester', cursive;
+    font-size : 2.5rem;
+    font-family: 'Great Vibes', cursive;
     margin: 0;
 }
 
@@ -35,9 +35,9 @@ li{
 
 .container{
     display: grid;
-    grid-template-columns: 30% auto;
-    grid-template-areas: 'coordonnees experiences';
-    height: 100vh;
+    grid-template-areas: 'coordonnees' 'contenu';
+    background: center / cover no-repeat url("images/fleurs.jpg") ;
+    padding: 20px;
 }
 
 /*======================================================================*/
@@ -45,35 +45,22 @@ li{
 /*======================================================================*/
 
 #cadre-coordonnees{
-    background-color: #910822;
-    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid #e9afbd;
     grid-area: coordonnees;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1;
-}
-
-
-
-#titre-nom{
-    color : #FFFFFF;
-    text-align: center;
-    font-size: 1.875rem;
-    font-family: 'Rochester',serif ;
-}
-
-#infos{
-    color : #FFFFFF;
-    text-align: left;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .image{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 100%;
+    border: 2px solid #e9afbd;
     object-fit: cover;
-    margin: 10% 0;
     transition: transform 1s;
 
 }
@@ -81,6 +68,30 @@ li{
 .image:hover{
     transform: scale(1.2);
 }
+
+#infos{
+    margin-left: 50px;
+}
+
+#titre-nom{
+    color : #FDF7F8;
+    font-size: 3.75rem;
+    font-family: 'Great Vibes',serif ;
+}
+
+.titre{
+    color : #FDF7F8;
+    margin: 10px 0 40px 0;
+}
+
+#description{
+    color : #FDF7F8;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
+
 
 #liste-coordonnees{
     margin: 0;
@@ -113,20 +124,37 @@ li{
 }
 /*======================================================================*/
 
+#contenu-cv{
+    grid-area: contenu;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'experiences formations' 'interets interets';
+    margin: 20px 20px 0 0;
+    grid-gap: 20px;
+}
+
+.cadre-contenu{
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+    border: 2px solid #e9afbd;
+}
+
 
 /*======================================================================*/
 /*===========================CADRE EXPERIENCES==========================*/
 /*======================================================================*/
-.titre{
-    color : #910822;
-    text-align: center;
+
+
+#cadre-experiences{
+    grid-area: experiences;
 }
 
-.cadre_experiences{
-    background-color: #f8f8f8;
-    text-align: justify;
-    grid-area: experiences;
-    padding: 20px 30px;
+#cadre-formations{
+    grid-area: formations;
+}
+
+#cadre-centres-interets{
+    grid-area: interets;
 }
 
 .dates{
@@ -146,11 +174,11 @@ li{
 }
 
 .titres-listes{
-    color : #910822;
+    color : #E9AFBD;
 }
 
 .content-listes{
-    color : #444444;
+    color : #FDF7F8;
     text-align: justify;
 }
 /*======================================================================*/
