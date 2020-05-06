@@ -41,9 +41,20 @@ p{
 
 .container{
     display: grid;
-    grid-template-areas: 'coordonnees' 'contenu';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'coordonnees contact' 'contenu contenu';
     background: center / cover no-repeat url("images/fleurs.jpg") ;
     padding: 20px;
+}
+
+.box{
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px;
+    border: 2px solid #e9afbd;
+}
+
+.titre-categorie{
+    color : #E9AFBD;
 }
 
 .scale{
@@ -59,14 +70,17 @@ p{
 /*======================================================================*/
 
 #cadre-coordonnees{
-    background-color: rgba(0,0,0,0.4);
-    border: 2px solid #e9afbd;
     grid-area: coordonnees;
-    padding: 40px;
+    grid-column: 1/5;
     display: grid;
-    grid-template-columns: 320px auto;
-    grid-template-areas: 'photo infos' 'contact contact';
+    grid-template-columns: 3fr 1fr;
+    margin: 0;
+    grid-gap: 20px;
+}
 
+#cadre-profil{
+    display: grid;
+    grid-template-areas: 'photo infos';
 }
 
 .image{
@@ -117,17 +131,10 @@ p{
     margin: 0;
 }
 
-#contact{
-    grid-area: contact;
-    margin-top: 40px;
-}
-
 
 #liste-coordonnees{
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     list-style: none;
 }
 
@@ -173,17 +180,12 @@ p{
 
 #contenu-cv{
     grid-area: contenu;
+    grid-column: 1/5;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 'experiences formations' 'interets interets';
     margin: 20px 20px 0 0;
     grid-gap: 20px;
-}
-
-.cadre-contenu{
-    background-color: rgba(0,0,0,0.4);
-    padding: 40px;
-    border: 2px solid #e9afbd;
 }
 
 
@@ -217,10 +219,6 @@ p{
 .listes{
     list-style: none;
     margin: 0;
-}
-
-.titres-listes{
-    color : #E9AFBD;
 }
 
 .content-listes{

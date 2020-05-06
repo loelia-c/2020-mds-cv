@@ -9,19 +9,22 @@
 <body>
 <div class="container">
     <div id="cadre-coordonnees" itemscope itemtype="http://schema.org/Person">
-        <img src="images/photo.jpg" class="image scale" alt="Photo Loélia COUTEAU">
-        <div id="infos">
-            <div id="titre-nom" itemprop="name">Loélia Couteau</div>
-            <h1 class="titre">Web Designer & Développeuse web</h1>
-            <div id="position" class="coordonnees">
-                <img class="icone" src="logos/position.png" alt="Icône de géolocalisation"/>
-                <a href="https://goo.gl/maps/NeAudeySbP2RvVth9" target="_blank">
-                    Nantes, 44300
-                </a>
+        <div id="cadre-profil" class="box">
+            <img src="images/photo.jpg" class="image scale" alt="Photo Loélia COUTEAU">
+            <div id="infos">
+                <div id="titre-nom" itemprop="name">Loélia Couteau</div>
+                <h1 class="titre" itemprop="jobTitle">Web Designer & Développeuse web</h1>
+                <div id="position" class="coordonnees">
+                    <img class="icone" src="logos/position.png" alt="Icône de géolocalisation"/>
+                    <a href="https://goo.gl/maps/NeAudeySbP2RvVth9" target="_blank">
+                        Nantes, 44300
+                    </a>
+                </div>
+                <p id="description" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
             </div>
-            <p id="description" itemprop="description" itemscope itemtype="http://schema.org/Invoice">"Je suis étudiante et apprentie en webdesign. Diplômée en développement, passionnée de musique."</p>
         </div>
-        <div id="contact" itemscope itemtype="http://schema.org/PostalAddress">
+        <div id="cadre-contact" class="box" itemscope itemtype="http://schema.org/PostalAddress">
+            <h2 class="titre-categorie">Contactez-moi !</h2>
             <ul id="liste-coordonnees">
                 <li id="mail" class="coordonnees">
                     <img class="icone" src="logos/mail.png" alt="Icône mail"/>
@@ -29,14 +32,18 @@
                 </li>
                 <li id="linkedin" class="coordonnees">
                     <img class="icone" src="logos/linkedin.png" alt="Icône LinkedIn"/>
-                    <a class="link" href="https://www.linkedin.com/in/loelia-couteau">loelia-c</a>
+                    <a class="link" href="https://www.linkedin.com/in/loelia-couteau" target="_blank">loelia-c</a>
+                </li>
+                <li id="site" class="coordonnees">
+                    <img class="icone" src="logos/mail.png" alt="Icône site"/>
+                    <a class="link" href="http://loeliacouteau.yo.fr/" itemprop="url" target="_blank">loeliacouteau.yo.fr</a>
                 </li>
             </ul>
         </div>
     </div>
     <div id="contenu-cv">
-        <div id="cadre-experiences" class="cadre-contenu">
-            <h2 class="titres-listes">Expériences professionnelles</h2>
+        <div id="cadre-experiences" class="box">
+            <h2 class="titre-categorie">Expériences professionnelles</h2>
             <ul class="listes">
                 <li class="content-listes">
                     <div class="logo-formations">
@@ -106,8 +113,8 @@
         </div>
 
 
-        <div id="cadre-formations" class="cadre-contenu">
-            <h2 class="titres-listes">Formations</h2>
+        <div id="cadre-formations" class="box">
+            <h2 class="titre-categorie">Formations</h2>
             <ul class="listes">
                 <li class="content-listes">
                     <div class="logo-formations">
@@ -165,8 +172,8 @@
             </ul>
         </div>
 
-        <div id="cadre-centres-interets" class="cadre-contenu">
-            <h2 class="titres-listes">Centres d'intérêts</h2>
+        <div id="cadre-centres-interets" class="box">
+            <h2 class="titre-categorie">Centres d'intérêts</h2>
             <ul class="listes">
                 <li class="content-listes">
                     <strong>Musique : </strong> Passionnée de musique en tous genres, de chant, pratique du clavier synthétiseur
