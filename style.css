@@ -10,9 +10,9 @@ body {
 }
 
 h1{
-    font-size: 2rem;
-    font-family: 'Raleway',sans-serif ;
     margin: 0;
+    font-size: 3.75rem;
+    font-family: 'Great Vibes', serif ;
 }
 
 h2{
@@ -48,7 +48,7 @@ p{
 }
 
 .box{
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     padding: 40px;
     border: 2px solid #e9afbd;
 }
@@ -101,22 +101,21 @@ p{
 #infos{
     grid-area: infos;
     margin: auto 20px;
-
 }
 
 #titre-nom{
     color : #FDF7F8;
-    font-size: 3.75rem;
-    font-family: 'Great Vibes', serif ;
 }
 
-.titre{
+#titre-job{
+    font-size: 2rem;
+    font-family: 'Raleway',sans-serif ;
     color : #FDF7F8;
     margin: 10px 0 30px 0;
 }
 
 #position{
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 #position a{
@@ -222,15 +221,16 @@ p{
 .listes{
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .content-listes{
     color : #FDF7F8;
-    text-align: justify;
+    text-align: left;
     display: grid;
     grid-template-columns: 25% auto;
     grid-template-areas: 'logo-formations formations';
-    margin: 0 0 20px 0;
+    margin: 0 0 80px 0;
 }
 
 .logo-formations{
@@ -241,7 +241,10 @@ p{
 }
 
 .logo{
+    width: 100%;
+    min-width: 60px;
     max-width: 160px;
+    height: auto;
 }
 
 .formations{
@@ -257,6 +260,44 @@ p{
 
 /*======================================================================*/
 
+#cadre-centres-interets h2{
+text-align: center;
+}
+
+.interets{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'musique cinema developpement-web animaux';
+    color: #FDF7F8;
+    text-align: center;
+}
+
+.interets li p{
+    margin-top: 20px;
+}
+
+#musique{
+    grid-area: musique;
+}
+
+#cinema{
+    grid-area: cinema;
+}
+
+#developpement-web{
+    grid-area: developpement-web;
+}
+
+#animaux{
+    grid-area: animaux;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1360px) {
     #cadre-coordonnees{
         grid-template-columns: 100%;
@@ -264,7 +305,54 @@ p{
     }
 }
 
+@media screen and (max-width: 992px) {
+    h3{
+        margin: 20px 0 30px 0;
+    }
+
+    #contenu-cv{
+        grid-template-columns: 100%;
+        grid-template-areas: 'experiences' 'formations' 'interets';
+    }
+
+    .titre-categorie{
+        text-align: center;
+    }
+
+    .content-listes{
+        grid-template-columns: 100%;
+        grid-template-areas: 'logo-formations' 'formations';
+        text-align: center;
+    }
+
+    .formations{
+        padding: 0;
+    }
+
+    .logo-formations{
+        justify-content: center;
+    }
+
+    .interets{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'musique cinema' 'developpement-web animaux';
+        grid-gap: 50px;
+    }
+
+
+
+}
+
 @media screen and (max-width: 768px) {
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .box{
+        padding: 20px;
+    }
+
     .container{
         grid-template-columns: 100%;
         grid-template-areas: 'coordonnees' 'contenu';
@@ -274,10 +362,48 @@ p{
         grid-template-areas: 'photo' 'infos';
     }
 
-    #contenu-cv{
-        grid-template-columns: 100%;
-        grid-template-areas: 'experiences' 'formations' 'interets';
+    .image{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
     }
+
+    .scale{
+        transition: none;
+    }
+
+    .scale:hover{
+        transform: none;
+    }
+
+    #infos{
+        margin-top: 40px;
+        text-align: center;
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    #titre-job{
+        font-size: 1.125rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    #position{
+        justify-content: center;
+    }
+
+    #description{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .logo{
+        min-height: 50px;
+        max-height: 60px;
+        width: auto;
+    }
+
 }
 
 
