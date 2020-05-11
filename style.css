@@ -53,11 +53,11 @@ ul{
 .box{
     background-color: rgba(0,0,0,0.7);
     padding: 40px;
-    border: 2px solid #e9afbd;
+    border: 2px solid #FAA3B4;
 }
 
 .titre-categorie{
-    color : #E9AFBD;
+    color : #FAA3B4;
 }
 
 .scale{
@@ -101,7 +101,7 @@ ul{
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    border: 2px solid #e9afbd;
+    border: 2px solid #FAA3B4;
     object-fit: cover;
 }
 
