@@ -49,7 +49,7 @@ ul{
     display: grid;
     grid-template-areas: 'coordonnees' 'contenu';
     grid-gap: 20px;
-    background: center / cover no-repeat url("images/fleurs.jpg") ;
+    background: fixed center no-repeat url("images/fleurs.jpg") ;
     padding: 20px;
 }
 
