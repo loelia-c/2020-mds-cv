@@ -365,10 +365,6 @@ ul{
 
 
 @media screen and (max-width: 1360px) {
-    #cadre-coordonnees{
-        grid-template-columns: 100%;
-        grid-template-areas: 'profil' 'contact';
-    }
 
     .competences{
         grid-template-columns: repeat(3, 1fr);
@@ -377,10 +373,18 @@ ul{
     }
 }
 
+@media screen and (max-width: 1080px) {
+    #cadre-coordonnees{
+        grid-template-columns: 100%;
+        grid-template-areas: 'profil' 'contact';
+    }
+}
+
 @media screen and (max-width: 992px) {
     h3{
         margin: 20px 0 30px 0;
     }
+
 
     #contenu-cv{
         grid-template-columns: 100%;
