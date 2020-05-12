@@ -47,6 +47,7 @@ ul{
     grid-template-areas: 'coordonnees' 'contenu';
     grid-gap: 20px;
     background: fixed center no-repeat url("images/fleurs.jpg") ;
+    background-size: cover;
     padding: 20px;
     height: auto;
 }
