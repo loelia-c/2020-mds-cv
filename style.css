@@ -48,6 +48,7 @@ ul{
     grid-gap: 20px;
     background: fixed center no-repeat url("images/fleurs.jpg") ;
     padding: 20px;
+    height: auto;
 }
 
 .box{
