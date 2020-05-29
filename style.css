@@ -5,6 +5,526 @@
 /*================================GENERAL===============================*/
 /*======================================================================*/
 
+p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+body{
+    font-size: 0.875rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF7F8;
+    font-family: "Raleway", serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    font-family: 'Great Vibes', serif ;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 2.25rem;
+    font-family: 'Great Vibes', cursive;
+    margin: 0 0 30px 0;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: 'Raleway',sans-serif ;
+    margin: 20px 0 30px 0;
+}
+
+
+.box{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid #FAA3B4;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'coordonnees' 'contenu';
+    grid-gap: 20px;
+    background: fixed center no-repeat url("images/fleurs.jpg") ;
+    background-size: cover;
+    padding: 20px;
+    height: auto;
+}
+
+.titre-categorie{
+    color : #FAA3B4;
+    text-align: center;
+}
+
+/*======================================================================*/
+
+
+/*======================================================================*/
+/*===========================CADRE COORDONNES===========================*/
+/*======================================================================*/
+
+#cadre-coordonnees{
+    grid-area: coordonnees;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'profil' 'contact';
+    margin: 0;
+    grid-gap: 20px;
+}
+
+#cadre-profil{
+    grid-area: profil;
+    display: grid;
+    grid-template-areas: 'photo' 'infos';
+}
+
+#cadre-contact{
+    grid-area: contact;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    grid-area: photo;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 100%;
+    border: 2px solid #FAA3B4;
+    object-fit: cover;
+}
+
+.scale{
+    transition: none;
+}
+
+.scale:hover{
+    transform: none;
+}
+
+#infos{
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-area: infos;
+    margin: auto 20px;
+}
+
+#titre-nom{
+    color : #FDF7F8;
+}
+
+#titre-job{
+    font-size: 1.125rem;
+    text-align: center;
+    margin: 0;
+    font-family: 'Raleway',sans-serif ;
+    color : #FDF7F8;
+}
+
+#position{
+    margin: 30px 0;
+    justify-content: center;
+}
+
+#description{
+    color : #FDF7F8;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#position a{
+    color: #FAA3B4;
+    text-decoration: none;
+    transition-duration: 400ms;
+}
+
+#position a:hover{
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+#liste-coordonnees{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mail{
+    grid-column: 2/3;
+}
+
+#linkedin{
+    grid-column: 3/4;
+}
+
+
+.coordonnees{
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.icone{
+    margin-right: 10px;
+    height: 32px;
+    width: 32px;
+}
+
+.link{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition-duration: 400ms;
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #FAA3B4;
+}
+
+/*======================================================================*/
+
+
+/*======================================================================*/
+/*====================CADRES EXPERIENCES ET FORMATIONS==================*/
+/*======================================================================*/
+
+#contenu-cv{
+    grid-area: contenu;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'experiences' 'formations' 'competences' 'interets';
+    grid-gap: 20px;
+}
+
+.logo-formations{
+    grid-area: logo-formations;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    min-height: 50px;
+    max-height: 60px;
+    width: auto;
+}
+
+.formations{
+    grid-area: formations;
+    padding: 0;
+}
+
+.titre-formation{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+/*======================================================================*/
+
+/*======================================================================*/
+/*=================================CADRES===============================*/
+/*======================================================================*/
+
+
+#cadre-experiences{
+    grid-area: experiences;
+}
+
+#cadre-formations{
+    grid-area: formations;
+}
+
+#cadre-competences{
+    grid-area: competences;
+}
+
+#cadre-centres-interets{
+    grid-area: interets;
+}
+
+/*======================================================================*/
+
+
+/*======================================================================*/
+/*================================LISTES================================*/
+/*======================================================================*/
+
+
+.listes{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-listes{
+    color : #FDF7F8;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'logo-formations' 'formations';
+    text-align: center;
+
+    margin: 0 0 80px 0;
+}
+
+
+
+/*======================================================================*/
+
+/*======================================================================*/
+/*==============================COMPETENCES=============================*/
+/*======================================================================*/
+
+
+#cadre-competences h2, #cadre-centres-interets h2{
+    text-align: center;
+}
+
+.competences{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'developpement' 'webdesign' 'audiovisuel' 'langues' 'bureautique';
+    grid-gap: 50px;
+    color: #FDF7F8;
+    text-align: center;
+}
+
+.competences p{
+    text-align: center;
+}
+
+#developpement{
+    grid-area: developpement;
+}
+
+#webdesign{
+    grid-area: webdesign;
+}
+
+#audiovisuel{
+    grid-area: audiovisuel;
+}
+
+#langues{
+    grid-area: langues;
+}
+
+#bureautique{
+    grid-area: bureautique;
+}
+
+.competences img{
+    margin-bottom: 20px;
+}
+
+.competences p{
+    padding: 15px;
+    text-align: left;
+}
+
+.titre-detail{
+    font-weight: 700;
+}
+
+/*======================================================================*/
+
+/*======================================================================*/
+/*==========================CENTRES D'INTERETS==========================*/
+/*======================================================================*/
+
+.interets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'musique cinema tattoo' 'developpement-web animaux .';
+    grid-gap: 50px;
+    color: #FDF7F8;
+    text-align: center;
+}
+
+.interets img, .competences img{
+    height: 70px;
+}
+
+.interets li p{
+    margin-top: 20px;
+}
+
+#musique{
+    grid-area: musique;
+}
+
+#cinema{
+    grid-area: cinema;
+}
+
+#tattoo{
+    grid-area: tattoo;
+}
+
+#developpement-web{
+    grid-area: developpement-web;
+}
+
+#animaux{
+    grid-area: animaux;
+}
+/*======================================================================*/
+
+@media screen and (min-width: 768px){
+    body{
+        font-size : 1rem;
+    }
+
+    h1{
+        font-size: 3.75rem;
+        text-align: left;
+    }
+
+    h2{
+        font-size : 2.5rem;
+    }
+
+    h3{
+        font-size: 1.75rem;
+        margin: 0 0 20px 0;
+    }
+
+    .box{
+        padding: 40px;
+    }
+
+    .container{
+        grid-template-areas: 'coordonnees' 'contenu';
+    }
+
+    .content-listes{
+        grid-template-columns: 25% auto;
+        grid-template-areas: 'logo-formations formations';
+        text-align: left;
+    }
+
+    .scale{
+        transition: transform 1s;
+    }
+
+    .scale:hover{
+        transform: scale(1.2);
+    }
+
+    #cadre-profil{
+        grid-template-areas: 'photo infos';
+    }
+
+    .image{
+        width: 250px;
+        height: 250px;
+    }
+
+    #infos{
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    #contenu-cv{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'experiences formations' 'competences competences' 'interets interets';
+    }
+
+    #titre-job{
+        text-align: left;
+        font-size: 2rem;
+        margin: 10px 0 30px 0;
+    }
+
+    #position{
+        justify-content: left;
+    }
+
+    #description{
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .logo-formations{
+        justify-content: left;
+    }
+
+    .logo{
+        width: 100%;
+        min-width: 60px;
+        max-width: 160px;
+        height: auto;
+    }
+    .formations{
+        padding-left: 20px;
+    }
+
+    .titre-formation{
+        font-size: 1.15rem;
+    }
+
+    .competences{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'developpement webdesign audiovisuel' 'langues bureautique .';
+        grid-gap: 50px;
+    }
+
+    .interets{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 'musique cinema tattoo developpement-web animaux';
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #cadre-coordonnees{
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 'profil contact';
+    }
+}
+
+@media screen and (min-width: 1360px){
+    .competences{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 'developpement webdesign audiovisuel langues bureautique';
+    }
+}
+
+/*
+
+
+
+@media screen and (max-width: 1080px) {
+
+}
+
+*/
+
+
+
+
+
+
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Raleway|Great+Vibes&display=swap');
+
+
+!*======================================================================*!
+!*================================GENERAL===============================*!
+!*======================================================================*!
+
 body {
     width: 100%;
     margin: 0;
@@ -71,12 +591,12 @@ ul{
 }
 
 
-/*======================================================================*/
+!*======================================================================*!
 
 
-/*======================================================================*/
-/*===========================CADRE COORDONNES===========================*/
-/*======================================================================*/
+!*======================================================================*!
+!*===========================CADRE COORDONNES===========================*!
+!*======================================================================*!
 
 #cadre-coordonnees{
     grid-area: coordonnees;
@@ -187,12 +707,12 @@ ul{
     color: #FAA3B4;
 }
 
-/*======================================================================*/
+!*======================================================================*!
 
 
-/*======================================================================*/
-/*====================CADRES EXPERIENCES ET FORMATIONS==================*/
-/*======================================================================*/
+!*======================================================================*!
+!*====================CADRES EXPERIENCES ET FORMATIONS==================*!
+!*======================================================================*!
 #contenu-cv{
     grid-area: contenu;
     display: grid;
@@ -226,11 +746,11 @@ ul{
     margin: 0 0 10px 0;
 }
 
-/*======================================================================*/
+!*======================================================================*!
 
-/*======================================================================*/
-/*=================================CADRES===============================*/
-/*======================================================================*/
+!*======================================================================*!
+!*=================================CADRES===============================*!
+!*======================================================================*!
 
 
 #cadre-experiences{
@@ -249,11 +769,11 @@ ul{
     grid-area: interets;
 }
 
-/*======================================================================*/
+!*======================================================================*!
 
-/*======================================================================*/
-/*================================LISTES================================*/
-/*======================================================================*/
+!*======================================================================*!
+!*================================LISTES================================*!
+!*======================================================================*!
 
 
 .listes{
@@ -271,12 +791,12 @@ ul{
     margin: 0 0 80px 0;
 }
 
-/*======================================================================*/
+!*======================================================================*!
 
 
-/*======================================================================*/
-/*==============================COMPETENCES=============================*/
-/*======================================================================*/
+!*======================================================================*!
+!*==============================COMPETENCES=============================*!
+!*======================================================================*!
 #cadre-competences h2, #cadre-centres-interets h2{
     text-align: center;
 }
@@ -323,11 +843,11 @@ ul{
 }
 
 
-/*======================================================================*/
+!*======================================================================*!
 
-/*======================================================================*/
-/*==========================CENTRES D'INTERETS==========================*/
-/*======================================================================*/
+!*======================================================================*!
+!*==========================CENTRES D'INTERETS==========================*!
+!*======================================================================*!
 
 .interets{
     display: grid;
@@ -362,7 +882,7 @@ ul{
 }
 
 
-/*======================================================================*/
+!*======================================================================*!
 
 
 
@@ -521,3 +1041,4 @@ ul{
 
 }
 
+*/
