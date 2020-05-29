@@ -450,6 +450,7 @@ h3{
 
     #position{
         justify-content: left;
+        margin: 0;
     }
 
     #description{
@@ -500,21 +501,6 @@ h3{
         grid-template-areas: 'developpement webdesign audiovisuel langues bureautique';
     }
 }
-
-/*
-
-
-
-@media screen and (max-width: 1080px) {
-
-}
-
-*/
-
-
-
-
-
 
 
 /*
