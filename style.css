@@ -346,8 +346,7 @@ h3{
 
 .interets{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'musique cinema tattoo' 'developpement-web animaux .';
+    grid-template-areas: 'musique' 'cinema' 'tattoo' 'developpement-web' 'animaux';
     grid-gap: 50px;
     color: #FDF7F8;
     text-align: center;
